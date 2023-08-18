@@ -101,6 +101,7 @@ function entry(areatype , result){
     const entry = document.getElementById('entry');
     const p = document.createElement('p');
     const count = entry.childElementCount;
+    p.classList.add('my-4');
     p.innerHTML = `${count+1}.The area of ${areatype} is ${result} cm<sup>2</sup> `;
     entry.appendChild(p);
 }
